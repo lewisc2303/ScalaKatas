@@ -36,5 +36,16 @@ class ReversePolishNotationSpec extends FlatSpec with Matchers {
     ReversePolishNotation.reversePolish(inputArray) shouldBe 48
   }
 
+  it should "multiply 2 and 6 then add 5 then divide 4 and minus 5" in {
+    val inputArray = "2 6 * 6 + 3 / 5 -"
+    ReversePolishNotation.reversePolish(inputArray) shouldBe 1
+  }
+
+//  it should "throw custom error message when incorrect string given" in {
+//    val inputArray = "2 + 6 + 6 + 3 / 5"
+//    ReversePolishNotation.reversePolish(inputArray) should
+//  }
+
+
 
 }
